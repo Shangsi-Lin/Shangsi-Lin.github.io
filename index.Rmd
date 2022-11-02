@@ -1,0 +1,23 @@
+---
+title: "All about Shangsi Lin"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cosmo
+---
+
+## Introduction
+
+Shangsi Lin is a 22 year old male who uses pronouns he/him. He was born in WeiHai, China on July the 7th, 2000. At the time of construction of this website, Shangsi is currently studying biostatistics at Columbia university as a graduate student. In his free time, Shangsi likes to read novels and play a video game called "League of Legends", he had some previous attempts of writing novels himself, but currently he is just to busy to do that.
+
+## About this "Icon"
+
+![](image/LK_Signature.jpg)
+
+Shangsi Lin tries to put the above "icon" on almost every personal belongings that he possibly can, including his iPad, computer screen, notebooks, exam papers, cheatsheets, etc. He does this for absolutely no reason and since he sort of "invented" this icon all the way back to primary school, he can't really remember if there are any "meanings" behind this icon. Fun fact: he Also uses this as his signature on receipts. 
+
+## Additional Websites
+*[A website he made about Whooping Crane](https://linshangsi.wixsite.com/whooping-crane)
+
+*[His bilibili home page](https://space.bilibili.com/487666937?spm_id_from=333.1007.0.0)
