@@ -19,4 +19,5 @@ Shangsi Lin tries to put the above "icon" on almost every personal belongings th
 ## Additional Websites
 *[A website he made about Whooping Crane](https://linshangsi.wixsite.com/whooping-crane)
 
-*[His bilibili home page](https://space.bilibili.com/487666937?spm_id_from=333.1007.0.0)
+## Link to another page
+*[resume](resume.html)
