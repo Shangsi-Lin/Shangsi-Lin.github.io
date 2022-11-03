@@ -5,10 +5,14 @@ navbar:
   right:
     - text: "Resume"
       href: resume.html
+    - text: "Dashboard"
+      href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<linshangsi@outlook.com>
     - icon: fa-github fa-lg
       href: http://github.com/Shangsi-Lin/
+    - text: "P8105"
+      href: http://p8105.com
 output:
   html_document:
     theme: cosmo

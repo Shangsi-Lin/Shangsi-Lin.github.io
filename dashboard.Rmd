@@ -1,0 +1,54 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+data("ny_noaa")
+ny_noaa = ny_noaa %>%
+  select(date,tmax,tmin, snow) %>%
+  drop_na() %>%
+  separate(date,into = c("year", "month", "day"),sep = "-") %>%
+  mutate(tmax = as.numeric(tmax) / 10,tmin = as.numeric(tmin) / 10) %>% 
+  filter(year > 2000) %>% 
+  rename("snowfall_mm" = "snow")
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Minimum temperature vs. snowfall(mm) during 2001 to 2010
+
+```{r}
+ny_noaa %>% 
+  filter(snowfall_mm > 0) %>% 
+  mutate(text_label = str_c("Month: ", month, "\nyear: ", year)) %>% 
+  plot_ly(x = ~tmin, y = ~snowfall_mm, color = ~year, alpha = 0.5, type = "scatter", mode = "markers", text = ~text_label, colors = "viridis")
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Maximum temperatures in October
+
+```{r}
+ny_noaa %>% 
+  filter(month == 10) %>% 
+  plot_ly(y = ~tmax, color = ~year, type = "violin", colors = "viridis")
+```
+
+### Minimum temperatures in Octorber between 2001 to 2010
+
+```{r}
+ny_noaa %>% 
+  filter(month == 10) %>% 
+  plot_ly(y = ~tmin, color = ~day, type = "box", colors = "viridis")
+```
+
