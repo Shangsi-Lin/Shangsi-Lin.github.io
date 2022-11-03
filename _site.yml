@@ -1,0 +1,14 @@
+name: "Hello Internet!"
+output_dir: "."
+navbar:
+  title: "Introduction"
+  right:
+    - text: "Resume"
+      href: resume.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<linshangsi@outlook.com>
+    - icon: fa-github fa-lg
+      href: http://github.com/<Shangsi-Lin>/
+output:
+  html_document:
+    theme: cosmo
